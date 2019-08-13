@@ -1,0 +1,18 @@
+<br>
+<br>
+<%= form_for(@tasks) do |f| %>
+  <div class="form-group">
+    <%= f.label :Task %>
+    <%= f.text_field :title, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :Details %>
+    <%= f.text_field :details, class: 'form-control' %>
+  </div>
+
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
+<br>
+<br>
+<%= link_to "Back to list", tasks_path %>
